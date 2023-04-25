@@ -1,0 +1,49 @@
+/* ---ESTRUTURA DE UMA PSEUDO-CLASSE---
+seletor:pseudo-classe{
+    prpoprieda: valor
+} */
+/* FIRST-CHILD - SE REFERE AO PRIMEIRO FILHO DA DIVISÃO(div, section etc...) */
+p:first-child {
+    color: aquamarine;
+}
+
+/* LAST-CHILD - SE REFERE AO ULTIMO FILHO DA DIVISÃO (div, section etc...) */
+p:last-child {
+    color: blueviolet;
+}
+/* NOT(CLASSE OU ID) - FAZ COM QUE ELEMENTOS SAIAM DE UM PADRÃO JÁ ESTIPULADO */
+p:not(.padrao) {
+    color: yellow;
+}
+/* NTH-CHILD(odd ou even) - FAZ COM QUE ELEMENTOS IMPARES ou PARES TENHAM COMPORTAMENTOS DIFERENTES COLOCANDO Odd OU Even, par ou impar */
+p:nth-child(even) {
+    color: red;
+}
+
+/* li:nth-child(even) {
+    color: green;
+} */
+
+li:nth-child(odd) {
+    color: orange;
+}
+
+/* NTH-CHILD(1n,2n,3n ou 1, 2, 3...) É REFERENTE A QUAL LINHA TERA A ALTERAÇÃO */
+li:nth-child(5) {
+    color: pink;
+}
+
+/* SEPARA UM GRUPO PARA QUE RECEBA A ALTERAÇÃO **do inicio para o final */
+li:nth-child(n+6):nth-child(-n+9){
+    color: grey;
+}
+
+/* SEPARA UM GRUPO PARA QUE RECEBA A ALTERAÇÃO **do final para o inicio */
+li:nth-last-child(1) {
+    color: chocolate;
+}
+
+/* ONLY-CHILD - SERVE PARA ESTILIZAR UM UNICO ELEMENTO QUE NÃO TENHA IRMÃOS */
+p:only-child {
+    color: rgb(124, 38, 146);
+}
