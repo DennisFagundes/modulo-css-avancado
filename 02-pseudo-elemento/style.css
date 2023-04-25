@@ -1,0 +1,35 @@
+/* ANATOMIA DO PSEUDO ELEMENTO
+ seletor::pseudo-elemento { 
+    propriedade: valor;
+}  */
+
+/* ESTILIZA A PRIMEIRA LETRA DO PARAGRAFO */
+.first-letter::first-letter {
+    color: coral;
+}
+
+/* ESTILIZA A PRIMEIRA LINHA DE UM PARAGRAFO */
+.first-line::first-line {
+    color: coral;
+}
+
+/* ESTILIZA A PRIMEIRA LETRA E A PRIMEIRA LINHA */
+.first-line::first-letter {
+    color: blue;
+}
+
+/* ESTILIZA POR MARCAÇÃO */
+li::marker {
+    color: red;
+    font-size: 23px;
+}
+
+/* SERVE PARA COLOCAR TEXTOS, IMAGENS ETC ANTES DO TEXTO ESCRITO */
+.before::before{
+    content: url(./images/baby-yoda.jpg);
+}
+
+/* SERVE PARA COLOCAR TEXTOS, IMAGENS ETC DEPOIS DO TEXTO ESCRITO */
+.after::after{
+    content: url(./images/baby-yoda.jpg);
+}
