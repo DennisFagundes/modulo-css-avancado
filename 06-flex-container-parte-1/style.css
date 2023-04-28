@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap:wrap; */
+    /* MANEIRA SHORHAND DE ESCREVER  */
+    flex-flow: row wrap; 
+}
+
+.container div {
+    background-color: aqua;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
